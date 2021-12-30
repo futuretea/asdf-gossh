@@ -48,7 +48,7 @@ get_download_url() {
   local version="$1"
   local platform="$(get_arch)"
   #https://github.com/windvalley/gossh/releases/download/v0.9.1/gossh-v0.9.1-linux-amd64
-  echo "https://github.com/windvalley/gossh/releases/download/v${version}/gossh-v${version}-${platform}_$(get_cpu)"
+  echo "https://github.com/windvalley/gossh/releases/download/v${version}/gossh-v${version}-${platform}-$(get_cpu)"
 }
 
 install_gossh $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
